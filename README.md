@@ -31,8 +31,10 @@ Installation
 
 You will need Git, Ruby and Rake:
 
-    $ git clone https://github.com/vinc/dotfiles.git ~/.dotfiles
+    $ git clone git://github.com/vinc/dotfiles.git ~/.dotfiles
     $ cd ~/.dotfiles
+    $ git submodule init
+    $ git submodule update
     $ rake install
 
 
