@@ -1,0 +1,5 @@
+export PATH="${PATH}:${HOME}/bin"
+export TERM="rxvt-unicode"
+export EDITOR="vim"
+export GREP_OPTIONS="--color=auto"
+export LS_OPTIONS="--color=auto" # Require 'ls' alias
