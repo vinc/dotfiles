@@ -1,13 +1,17 @@
-autoload -U compinit promptinit
+# Completion
+autoload -U compinit
 compinit
-promptinit
-
-#
 zstyle ':completion:*' menu select
 setopt complete_aliases
 
-#
-prompt adam2
+# Prompt theme
+autoload -U promptinit
+promptinit
+if [ -n "$SSH_CLIENT" ]; then
+    prompt adam2 cyan green yellow white
+else
+    prompt adam2
+fi
 
 # Command history configuration
 if [ -z $HISTFILE ]; then
