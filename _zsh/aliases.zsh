@@ -6,3 +6,5 @@ alias ll="ls -l"
 alias vim="vim -p"
 
 alias please="sudo"
+
+hash colordiff 2>/dev/null && alias diff="colordiff"
