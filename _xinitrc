@@ -1,4 +1,5 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xsetroot -solid $(xrdb -query | grep background | cut -f2)
 xsetroot -cursor_name left_ptr
 setxkbmap dvorak
 exec xmonad
