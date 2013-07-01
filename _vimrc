@@ -13,3 +13,6 @@ set expandtab
 
 set number
 set colorcolumn=80
+
+" Disable beep
+set visualbell t_vb=
