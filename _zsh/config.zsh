@@ -28,6 +28,8 @@ setopt HIST_IGNORE_SPACE # Do not record commands starting with a space
 setopt CORRECT
 setopt DVORAK
 
+setopt NO_BEEP
+
 bindkey "\e\e[C" forward-word
 bindkey "\e\e[D" backward-word
 bindkey "^[[A" up-line-or-search
