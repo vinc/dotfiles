@@ -1,8 +1,7 @@
 alias e="$EDITOR"
 alias g="git"
-
-alias ls="ls $LS_OPTIONS"
-alias ll="ls -l"
+alias l="ls $LS_OPTIONS"
+alias ll="l -l"
 alias vim="vim -p"
 alias sys="systemctl"
 
