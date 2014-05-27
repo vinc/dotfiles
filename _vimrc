@@ -16,3 +16,5 @@ set colorcolumn=80
 
 " Disable beep
 set visualbell t_vb=
+
+set clipboard=unnamed
