@@ -13,3 +13,6 @@
 [submodule "_vim/bundle/vim-less"]
 	path = _vim/bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "_rbenv"]
+	path = _rbenv
+	url = https://github.com/sstephenson/rbenv.git
