@@ -16,3 +16,6 @@
 [submodule "_rbenv"]
 	path = _rbenv
 	url = https://github.com/sstephenson/rbenv.git
+[submodule "_vim/bundle/syntastic"]
+	path = _vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
