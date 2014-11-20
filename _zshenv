@@ -1,3 +1,4 @@
+source /etc/profile
 export PATH="${HOME}/.rbenv/bin:${PATH}"
 export TERM="rxvt-unicode"
 export EDITOR="vim"
