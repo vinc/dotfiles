@@ -4,9 +4,9 @@
         ui = true
 [core]
         autocrlf = input
+        excludesfile = ~/.gitignore
 [user]
         name = <%= $stdout.write('Your Name: '); $stdin.gets.chomp %>
         email = <%= $stdout.write('Your Email: '); $stdin.gets.chomp %>
 [github]
         user = <%= $stdout.write('Your GitHub Username: '); $stdin.gets.chomp %>
-        token = <%= $stdout.write('Your GitHub API Token: '); $stdin.gets.chomp %>
