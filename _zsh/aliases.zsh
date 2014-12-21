@@ -3,6 +3,7 @@ alias ls="ls --color=auto"
 
 alias e="$EDITOR"
 alias g="git"
+alias r="rails"
 alias ll="ls -l"
 alias rm="rm -i"
 alias vim="vim -p"
