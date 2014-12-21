@@ -1,7 +1,9 @@
+alias grep="grep --color=auto"
+alias ls="ls --color=auto"
+
 alias e="$EDITOR"
 alias g="git"
 alias r="rails"
-alias l="ls $LS_OPTIONS"
 alias ll="l -l"
 alias rm="rm -i"
 alias vim="vim -p"
