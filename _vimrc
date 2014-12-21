@@ -3,6 +3,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+
 set background=dark
 colorscheme solarized
 
