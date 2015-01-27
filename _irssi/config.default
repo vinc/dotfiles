@@ -1,0 +1,27 @@
+servers = (
+  { 
+    address = "irc.freenode.net";
+    chatnet = "freenode";
+    port = "6667";
+  },
+  { 
+    address = "irc.mozilla.org";
+    chatnet = "mozilla";
+    port = "6667";
+  }
+);
+
+chatnets = {
+  freenode = {
+    type = "IRC";
+  };
+  mozilla = {
+    type = "IRC";
+  };
+};
+
+settings = {
+  "fe-common/core" = {
+    theme = "solarized.theme";
+  };
+};
