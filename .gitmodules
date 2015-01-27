@@ -22,3 +22,6 @@
 [submodule "_vim/bundle/rust.vim"]
 	path = _vim/bundle/rust.vim
 	url = https://github.com/wting/rust.vim.git
+[submodule "_mutt/mutt-colors-solarized"]
+	path = _mutt/mutt-colors-solarized
+	url = https://github.com/altercation/mutt-colors-solarized.git
