@@ -1,6 +1,6 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 xsetroot -solid $(xrdb -query | grep background | cut -f2)
 xsetroot -cursor_name left_ptr
-setxkbmap dvorak -option compose:menu
+setxkbmap dvorak -option compose:menu,lv3:ralt_switch,eurosign:e
 eval $(ssh-agent)
 exec xmonad
