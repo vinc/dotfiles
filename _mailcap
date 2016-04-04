@@ -1,2 +1,2 @@
 text/html; elinks -dump; copiousoutput;
-image/*;   feh -. %s;
+image/*;   feh -B black %s;
