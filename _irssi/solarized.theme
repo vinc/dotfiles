@@ -1,3 +1,2 @@
-abstracts = {
-  sb_background = "%0";
-};
+abstracts = { sb_background = "%0"; };
+formats = { "fe-common/core" = { timestamp = "{timestamp %%s }"; }; };
