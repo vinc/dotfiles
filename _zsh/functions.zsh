@@ -8,6 +8,10 @@ md() {
   mkdir -p "$@" && cd "$@"
 }
 
+txt() {
+  fmt $1 | less
+}
+
 c() {
   echo $(( $* ))
 }
