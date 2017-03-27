@@ -1,14 +1,16 @@
+set -e
+
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 xsetroot -solid $(xrdb -query | grep background | cut -f2)
 
 xsetroot -cursor_name left_ptr
 
-setxkbmap dvorak \          # Set dvorak keyboard
-  -option caps:escape \     # with ESC replacing CAPS key
-  -option compose:menu \    #
-  -option lv3:ralt_switch \ #
-  -option eurosign:e        #
+setxkbmap dvorak \
+  -option caps:escape \
+  -option compose:menu \
+  -option lv3:ralt_switch \
+  -option eurosign:e
 
 # Expose DISPLAY variable to systemd for redshift
 # NOTE: run `systemctl --user enable redshift` to enable redshift
