@@ -10,7 +10,6 @@ alias rm="rm -i"
 alias ff="nohup firefox > /dev/null"
 
 alias sys="systemctl"
-alias pkg="pacaur"
 
 alias rss="newsbeuter"
 alias pdf="zathura"
@@ -19,5 +18,10 @@ alias music="cmus"
 alias video="mpv"
 
 alias please="sudo" # :)
+
+#compdef g="git"
+#compdef pkg="pacaur"
+
+alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
 
 hash colordiff 2>/dev/null && alias diff="colordiff"
