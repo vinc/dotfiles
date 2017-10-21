@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'vundlevim/vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
@@ -18,9 +18,6 @@ filetype plugin indent on
 syntax on
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
-
-" https://github.com/rust-lang/rust.vim/issues/118
-let g:syntastic_rust_checkers = ['cargo']
 
 set background=dark
 colorscheme solarized
