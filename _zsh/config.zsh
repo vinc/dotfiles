@@ -7,11 +7,14 @@ setopt complete_aliases
 # Prompt theme
 autoload -U promptinit
 promptinit
-if [ -n "$SSH_CLIENT" ]; then
-    prompt adam2 cyan green yellow white
-else
-    prompt adam2
-fi
+#if [ -n "$SSH_CLIENT" ]; then
+#    prompt adam2 cyan green yellow white
+#else
+#    prompt adam2
+#fi
+prompt pure
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Command history configuration
 if [ -z $HISTFILE ]; then
