@@ -1,7 +1,21 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-syntax on
+" begin vundle config
+set nocompatible
+filetype off 
+
+set rtp+=~/.vim/bundle/vundle.vim
+call vundle#begin()
+
+Plugin 'vundlevim/vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'rust-lang/rust.vim'
+
+call vundle#end()
 filetype plugin indent on
+" end vundle config
+
+syntax on
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
