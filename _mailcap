@@ -1,2 +1,2 @@
 text/html; elinks -dump; copiousoutput;
-image/*;   feh -B white %s;
+image/*;   feh --scale-down --image-bg white %s;
