@@ -1,18 +1,20 @@
 [alias]
-        a = add
-        b = branch
-        c = commit
-        l = log
-        s = status
-
-        co = checkout
+  a  = add
+  b  = branch
+  c  = commit
+  co = checkout
+  d  = diff
+  l  = log
+  ll = log --oneline
+  lg = log --oneline --graph
+  s  = status
 [color]
-        ui = true
+  ui = true
 [core]
-        autocrlf = input
-        excludesfile = ~/.gitignore
+  autocrlf = input
+  excludesfile = ~/.gitignore
 [user]
-        name = <%= $stdout.write('Your Name: '); $stdin.gets.chomp %>
-        email = <%= $stdout.write('Your Email: '); $stdin.gets.chomp %>
+  name = <%= $stdout.write('Your Name: '); $stdin.gets.chomp %>
+  email = <%= $stdout.write('Your Email: '); $stdin.gets.chomp %>
 [github]
-        user = <%= $stdout.write('Your GitHub Username: '); $stdin.gets.chomp %>
+  user = <%= $stdout.write('Your GitHub Username: '); $stdin.gets.chomp %>
