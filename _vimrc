@@ -37,3 +37,6 @@ set colorcolumn=80
 set visualbell t_vb=
 
 set clipboard=unnamed
+
+nnoremap s l
+nnoremap l s
