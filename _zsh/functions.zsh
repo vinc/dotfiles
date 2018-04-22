@@ -1,22 +1,3 @@
-pkg() {
-  case "$1" in
-    install)
-      cmd="-S"
-      ;;
-    upgrade)
-      cmd="-Syu"
-      ;;
-    search)
-      cmd="-Ss"
-      ;;
-    *)
-      cmd="$1"
-      ;;
-  esac
-  shift
-  pacaur $cmd $*
-}
-
 clock() {
   TIME="sed 's/\w\w:\w\w:\w\w:/\n/g'"
   DRAW="figlet -Wcf new_asci -w $(tput cols)"
