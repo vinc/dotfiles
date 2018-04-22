@@ -17,6 +17,9 @@ filetype plugin indent on
 
 syntax on
 
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *.atom.builder set ft=ruby
+
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 set background=dark
