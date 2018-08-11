@@ -1,15 +1,18 @@
 " begin vundle config
 set nocompatible
-filetype off 
+filetype off
 
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
-Plugin 'vundlevim/vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'w0rp/ale'
+Plugin 'junegunn/fzf'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rust-lang/rust.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vundlevim/vundle.vim'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,6 +27,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 set background=dark
 colorscheme solarized
+hi Normal guibg=NONE ctermbg=NONE
 
 set tabstop=2
 set shiftwidth=2
@@ -38,5 +42,12 @@ set visualbell t_vb=
 
 set clipboard=unnamed
 
-nnoremap s l
-nnoremap l s
+" The direction keys [h][j][k][l] keys on a qwerty keyboard map to 'dhtn' in
+" dvorak, and the [p][c][v][j] keys map to 'hjkl' but the [p] is too far.
+"
+" When we swap [t]ill to til[l], we get righ[t] and the directions keys are
+" now [j][c][v][k].
+nnoremap t l
+nnoremap l t
+nnoremap T L
+nnoremap L T
