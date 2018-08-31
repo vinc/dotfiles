@@ -11,6 +11,8 @@ xsetroot -cursor_name left_ptr
 # Hide cursor after a while
 unclutter &
 
+pgrep redshift &> /dev/null || redshift &> /dev/null &
+
 setxkbmap dvorak \
   -option caps:escape \
   -option compose:menu \
