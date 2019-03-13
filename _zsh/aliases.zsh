@@ -2,6 +2,7 @@ alias grep="grep --color=auto"
 alias vim="vim -p"
 alias ls="ls --color=auto"
 
+alias b="bundle"
 alias e="$EDITOR"
 alias g="git"
 alias r="rails"
