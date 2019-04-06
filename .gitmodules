@@ -13,3 +13,6 @@
 [submodule "_asdf"]
 	path = _asdf
 	url = https://github.com/asdf-vm/asdf.git
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure
