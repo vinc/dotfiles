@@ -16,3 +16,6 @@
 [submodule "pure"]
 	path = pure
 	url = https://github.com/sindresorhus/pure
+[submodule "_fzf"]
+	path = _fzf
+	url = https://github.com/junegunn/fzf.git
