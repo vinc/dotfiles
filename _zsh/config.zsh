@@ -5,14 +5,14 @@ zstyle ':completion:*' menu select
 setopt complete_aliases
 
 # Prompt theme
-autoload -U promptinit
-promptinit
+#autoload -U promptinit
+#promptinit
 #if [ -n "$SSH_CLIENT" ]; then
 #    prompt adam2 cyan green yellow white
 #else
 #    prompt adam2
 #fi
-prompt pure
+#prompt pure
 
 source /usr/share/zsh*/**/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
