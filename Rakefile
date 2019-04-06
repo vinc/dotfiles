@@ -2,7 +2,7 @@ require 'erb'
 require 'rake'
 
 desc 'install dotfiles into home directory'
-task :install do
+task :default do
   replace_all = false
   Dir['_*'].each do |src|
     $stderr.write("\n")
