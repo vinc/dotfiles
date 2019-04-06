@@ -33,12 +33,29 @@ Run the following commands:
 
     $ git clone --recursive git://github.com/vinc/dotfiles.git ~/.dotfiles
     $ cd ~/.dotfiles
-    $ rake install
+    $ rake
+
+Optional steps:
+
+    $ ~/.fzf/install
+    $ vim +PluginInstall +qall
 
 And later to sync the repo:
 
     $ git pull --rebase
     $ git submodule update --recursive --remote
+
+Installing ruby:
+
+    $ asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+    $ asdf install ruby 2.6.2
+    $ gem install rake
+
+Installing node:
+
+    $ asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+    $ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+    $ asdf install nodejs 10.15.3
 
 
 Thanks
