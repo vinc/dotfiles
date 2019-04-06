@@ -39,3 +39,6 @@ bindkey "\e\e[C" forward-word
 bindkey "\e\e[D" backward-word
 bindkey "^[[A" up-line-or-search
 bindkey "^[[B" down-line-or-search
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
