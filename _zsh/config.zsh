@@ -4,18 +4,19 @@ compinit
 zstyle ':completion:*' menu select
 setopt complete_aliases
 
-# Prompt theme
-#autoload -U promptinit
-#promptinit
-#if [ -n "$SSH_CLIENT" ]; then
-#    prompt adam2 cyan green yellow white
-#else
-#    prompt adam2
-#fi
-#prompt pure
-
-source /usr/share/zsh*/**/zsh-syntax-highlighting.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Load plugins
+plugins=(
+  "$HOME/.asdf/asdf.sh"
+  "$HOME/.asdf/completions/asdf.bash"
+  "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  "/usr/local/etc/profile.d/autojump.sh"
+  "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  "/usr/share/fzf/key-bindings.zsh"
+  "/usr/share/fzf/completion.zsh"
+)
+for plugin in $plugins; do
+  test -f $plugin && source $plugin
+done
 
 # Command history configuration
 if [ -z $HISTFILE ]; then
