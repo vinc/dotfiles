@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rust-lang/rust.vim'
@@ -16,7 +16,6 @@ Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
-" end vundle config
 
 syntax on
 
@@ -26,7 +25,7 @@ au BufNewFile,BufRead *.atom.builder set ft=ruby
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 
 set tabstop=2
