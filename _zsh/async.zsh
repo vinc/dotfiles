@@ -1,1 +1,1 @@
-/home/v/.dotfiles/pure/async.zsh
+../pure/async.zsh

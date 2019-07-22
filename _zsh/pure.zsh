@@ -1,1 +1,1 @@
-/home/v/.dotfiles/pure/pure.zsh
+../pure/pure.zsh
