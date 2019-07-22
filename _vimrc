@@ -7,7 +7,7 @@ call vundle#begin()
 
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
-Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
