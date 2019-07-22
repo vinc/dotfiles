@@ -28,4 +28,4 @@ eval $(ssh-agent)
 
 libinput-gestures-setup start
 
-exec xmonad
+exec bspwm
