@@ -24,6 +24,8 @@ au BufNewFile,BufRead *.atom.builder set ft=ruby
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
+set backspace=indent,eol,start
+
 set background=dark
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
