@@ -5,7 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
-Plugin 'morhetz/gruvbox'
+Plugin 'gruvbox-community/gruvbox'
 Plugin 'junegunn/fzf'
 "Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rust-lang/rust.vim'
@@ -26,8 +26,10 @@ autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 
 set backspace=indent,eol,start
 
+set termguicolors
 set background=dark
 colorscheme gruvbox
+
 hi Normal guibg=NONE ctermbg=NONE
 
 set tabstop=2
