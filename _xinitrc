@@ -4,8 +4,7 @@ set -e
 
 xbindkeys
 
-# xsetroot -solid #282828
-
+xsetroot -solid "#282828"
 xsetroot -cursor_name left_ptr
 
 # Hide cursor after a while
