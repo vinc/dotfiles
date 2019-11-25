@@ -7,18 +7,26 @@ This repository provides everything I need to feel at home in a terminal.
 Synopsis
 --------
 
-I use the following awesome software:
+The following sofware are configured:
 
-* Git
-* Rxvt-unicode
-* Vim
-* XMonad
-* Zsh
+* bspwm + lemonbar (window manager)
+* alacritty (terminal emulator)
+* zsh + pure prompt (shell)
+* fzf (command line fuzzy finder)
+* autojump (fast filesystem navigator)
+
+* vim (text editor)
+* git (content tracker)
+* asdf (language runtime version manager)
+
+* elinks (command line browser)
+* mutt (command line mail user agent)
+* irssi (command line irc client)
 
 Customized with the following particularities:
 
+* Gruvbox color scheme
 * Dvorak keyboard layout
-* Solarized color scheme
 
 Everything starting with an underscore in the root directory will be symlinked
 to the user's home directory, with the exception of files ending with an `erb`
@@ -67,4 +75,4 @@ Thanks
 Copyright
 ---------
 
-Copyright (C) 2013-2017 Vincent Ollivier. Released under the MIT License.
+Copyright (c) 2013-2019 Vincent Ollivier. Released under the MIT License.
