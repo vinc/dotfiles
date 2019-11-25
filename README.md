@@ -1,5 +1,5 @@
-Vinc Dotfiles
-=============
+Vinc .dotfiles
+==============
 
 This repository provides everything I need to feel at home in a terminal.
 
