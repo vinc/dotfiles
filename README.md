@@ -3,6 +3,7 @@ Vinc Dotfiles
 
 This repository provides everything I need to feel at home in a terminal.
 
+![screenshot](https://vinc.cc/desktop.png)
 
 Synopsis
 --------
