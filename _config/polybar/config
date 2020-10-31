@@ -1,0 +1,78 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #3C3836
+background-alt = #504945
+foreground = #D5C4A1
+foreground-alt = #A89984
+primary = #FABD2F
+secondary = #B8Bb26
+alert = #FB4934
+
+[bar/bspwm]
+width = 100%
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 0
+border-size = 0
+padding-left = 1
+padding-right = 1
+module-margin-left = 0
+module-margin-right = 0
+font-0 = Inconsolata:size=13;2
+modules-left = geodate
+modules-center = bspwm
+modules-right = acpi-battery
+cursor-click = pointer
+cursor-scroll = ns-resize
+;wm-restack = bspwm
+
+[module/bspwm]
+type = internal/bspwm
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 1
+label-occupied = %index%
+label-occupied-padding = 1
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 1
+
+[module/geodate]
+type = custom/script
+exec = geodate 48.5159 -3.3333 --format "%h%y-%m-%d %c:%b"
+interval = 8.64
+
+[module/acpi-battery]
+type = custom/script
+exec = b=$(acpi --battery | cut -d, -f2); if [ "${b:1:-1}" -lt 10 ]; then echo %{F#FB4934}$b%{F-}; else echo $b; fi
+interval = 5
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
