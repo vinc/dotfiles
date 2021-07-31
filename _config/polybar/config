@@ -37,9 +37,11 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 0
 font-0 = Inconsolata:size=13;2
+font-1 = "MaterialIcons:size=11;3"
+;font-1 = "Font Awesome 5 Free:style=Solid:size=11;2"
 modules-left = geodate
 modules-center = bspwm
-modules-right = acpi-battery
+modules-right = memory acpi-battery
 cursor-click = pointer
 cursor-scroll = ns-resize
 ;wm-restack = bspwm
@@ -58,6 +60,13 @@ label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 1
 
+[module/memory]
+type = internal/memory
+interval = 5
+format = <label>
+label = %percentage_used%%
+label-padding = 1
+
 [module/geodate]
 type = custom/script
 exec = geodate 48.5159 -3.3333 --format "%h%y-%m-%d %c:%b"
@@ -65,7 +74,7 @@ interval = 8.64
 
 [module/acpi-battery]
 type = custom/script
-exec = b=$(acpi --battery | cut -d, -f2); if [ "${b:1:-1}" -lt 10 ]; then echo %{F#FB4934}$b%{F-}; else echo $b; fi
+exec = b=($(acpi --battery | grep -o "\w\+")); c=$([ "${b[2]}" == "Charging" ] && echo "" || echo ""); if [ "${b[3]}" -lt 10 ]; then echo %{F#FB4934} ${b[3]}%%{F-}; else echo $c${b[3]}%; fi
 interval = 5
 
 [settings]
