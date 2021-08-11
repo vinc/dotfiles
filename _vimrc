@@ -29,6 +29,7 @@ set backspace=indent,eol,start
 
 set termguicolors
 set background=dark
+let g:gruvbox_guisp_fallback = 'bg'
 colorscheme gruvbox
 
 hi Normal guibg=NONE ctermbg=NONE
@@ -39,7 +40,14 @@ set softtabstop=2
 set expandtab
 
 set number
-set colorcolumn=80
+set colorcolumn=80,100,120
+
+" Add format option 'w' to add trailing white space, indicating that paragraph
+" continues on next line. This is to be used with mutt's 'text_flowed' option.
+augroup mail_trailing_whitespace " {
+  autocmd!
+  autocmd FileType mail setlocal formatoptions+=w
+augroup END " }
 
 " Disable beep
 set visualbell t_vb=
@@ -55,3 +63,8 @@ nnoremap t l
 nnoremap l t
 nnoremap T L
 nnoremap L T
+
+" Disable 'ex mode' key [Q] that is right next to 'ex cmd' key [:] on a dvorak
+" keyboard, causing entering it by mistake and having to type 'visual' to
+" leave it.
+nnoremap Q <Nop>
