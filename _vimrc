@@ -5,6 +5,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
+"Plugin 'morhetz/gruvbox'
 Plugin 'gruvbox-community/gruvbox'
 Plugin 'junegunn/fzf'
 "Plugin 'ntpeters/vim-better-whitespace'
