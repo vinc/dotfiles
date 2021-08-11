@@ -10,14 +10,14 @@ Synopsis
 
 The following sofware are configured:
 
-* bspwm + lemonbar (window manager)
+* bspwm + sxhkd + polybar (window manager)
 * alacritty (terminal emulator)
 * zsh + pure prompt (shell)
 * fzf (command line fuzzy finder)
 * autojump (fast filesystem navigator)
 
 * vim (text editor)
-* git (content tracker)
+* git (version control system)
 * asdf (language runtime version manager)
 
 * elinks (command line browser)
@@ -76,4 +76,4 @@ Thanks
 Copyright
 ---------
 
-Copyright (c) 2013-2019 Vincent Ollivier. Released under the MIT License.
+Copyright (c) 2013-2021 Vincent Ollivier. Released under the MIT License.
