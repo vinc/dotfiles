@@ -1,8 +1,6 @@
 # Completion
-autoload -U compinit
-compinit
-zstyle ':completion:*' menu select
-setopt complete_aliases
+autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
 
 # Load plugins
 plugins=(
