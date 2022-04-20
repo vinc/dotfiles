@@ -13,7 +13,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vundlevim/vundle.vim'
-Plugin 'w0rp/ale'
+Plugin 'fidian/hexmode'
+Plugin 'dense-analysis/ale'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,6 +25,8 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 au BufNewFile,BufRead *.atom.builder set ft=ruby
 
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+
+let g:ale_linters = {'rust': ['analyzer']}
 
 set backspace=indent,eol,start
 
