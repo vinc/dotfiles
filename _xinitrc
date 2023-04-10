@@ -3,9 +3,8 @@ set -e
 # [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 xbindkeys
-
-xsetroot -solid "#282828"
 xsetroot -cursor_name left_ptr
+set-theme dark
 
 # Hide cursor after a while
 unclutter &
