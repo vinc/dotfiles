@@ -1,0 +1,7 @@
+bind-key RIGHT open
+bind-key LEFT quit
+
+color info                color15   color0
+color hint-key            color15   color0 bold
+color listfocus           color0    yellow
+color listfocus_unread    color0    yellow
