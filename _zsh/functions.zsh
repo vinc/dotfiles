@@ -25,3 +25,7 @@ set-theme() {
   test "$1" = "light"
   sed -i "s/dark-theme=[0-9]/dark-theme=$?/g" ~/.config/gtk-3.0/settings.ini
 }
+
+domain() {
+  whois $1 | grep "No match for domain"
+}
