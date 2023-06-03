@@ -19,6 +19,6 @@ bspc rule -a "firefox":"Navigator" state=tiled
 bspc rule -a "firefox":"Firefox" state=floating # downloading dialog
 bspc rule -a "firefox":"firefox" state=floating # saving dialog
 
-polybar bspwm &
+polybar bspwm --reload &
 
 alacritty &
