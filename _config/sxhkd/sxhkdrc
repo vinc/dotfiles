@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-  rofi -show run -theme gruvbox-dark
+  rofi -show drun -theme gruvbox-dark
 
 # make sxhkd reload its configuration files:
 super + q
