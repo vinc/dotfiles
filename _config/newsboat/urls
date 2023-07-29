@@ -1,9 +1,8 @@
 https://news.vinc.cc/search.atom?q=wikipedia+events
 https://news.vinc.cc/search.atom?q=hackernews+sort:top+limit:10
 https://news.vinc.cc/search.atom?q=reddit+programming+rust+lisp+ruby+osdev+sort:top+limit:10
-
 https://anarchistnews.org/rss.xml
-
+https://solar.lowtechmagazine.com/posts/index.xml
 https://what-if.xkcd.com/feed.atom
 https://ranprieur.com/feed.php
 https://www.antipope.org/charlie/blog-static/atom.xml
@@ -11,6 +10,7 @@ https://100r.co/links/rss.xml
 https://journal.miso.town/atom?url=https://wiki.xxiivv.com/site/now.html
 https://skovati.dev/articles/index.xml
 https://bt.ht/atom.xml
+https://ajroach42.com/feed.xml
 https://drewdevault.com/blog/index.xml
 https://fasterthanli.me/index.xml
 https://ciechanow.ski/atom.xml
@@ -20,7 +20,7 @@ https://www.brandur.org/articles.atom
 https://brr.fyi/feed.xml
 https://staysaasy.com/feed.xml
 https://two-wrongs.com/feed
+https://blog.pastly.net/index.xml
+https://skunkledger.substack.com/feed
 https://brooker.co.za/blog/rss.xml
-
-http://feeds2.feedburner.com/typepad/krisdedecker/lowtechmagazineenglish
 https://www.ecosophia.net/feed/

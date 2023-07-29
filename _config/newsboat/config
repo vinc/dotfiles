@@ -1,8 +1,8 @@
 bind-key RIGHT open
 bind-key LEFT quit
 
-color title               color0     color11
+color title               color0     color3
 color info                color15    color0
-color hint-key            color15    color0 bold
-color listfocus           color15    color3
-color listfocus_unread    color15    color3
+color hint-key            color15    color0    bold
+color listfocus           color0     color11
+color listfocus_unread    color0     color11
