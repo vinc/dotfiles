@@ -1,0 +1,8 @@
+abstracts = {
+  sb_background = "%3%k";
+  sb = " %k[%n$*%k]%n";
+  sbmode = "(%k+%n$*)";
+  sb_act_sep = "%k$*";
+  sb_act_text = "%k$*";
+  sb_act_msg = "%W$*";
+};
