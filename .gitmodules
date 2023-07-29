@@ -17,5 +17,5 @@
 	path = _fzf
 	url = https://github.com/junegunn/fzf.git
 [submodule "_config/alacritty/themes"]
-  path = _config/alacritty/themes
-  url = https://github.com/alacritty/alacritty-theme
+	path = _config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme
