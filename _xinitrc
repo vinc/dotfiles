@@ -1,17 +1,18 @@
 set -e
 
-# [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 xbindkeys
 xsetroot -cursor_name left_ptr
-set-theme dark
+xsetroot -solid "#282828"
+#set-theme dark
 
 # Hide cursor after a while
 unclutter &
 
 pgrep redshift &> /dev/null || redshift &> /dev/null &
 
-setxkbmap dvorak \
+setxkbmap -variant dvorak \
   -option caps:escape \
   -option compose:menu \
   -option lv3:ralt_switch \
@@ -25,5 +26,11 @@ sh /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 eval $(ssh-agent)
 
 libinput-gestures-setup start
+
+# Notifications
+# systemctl --user import-environment DISPLAY
+dunst &
+
+batsignal -b
 
 exec bspwm
