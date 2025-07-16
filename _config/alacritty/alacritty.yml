@@ -85,64 +85,63 @@ window:
         # scrollback is enabled (history > 0).
       multiplier: 3
 
-        # Font configuration (changes require restart)
-      font:
-        # Normal (roman) font face
-        normal:
-          # Font family
-          #
-          # Default:
-          #   - (macOS) Menlo
-          #   - (Linux) monospace
-          #   - (Windows) Consolas
-          #family: monospace
-          family: Inconsolata
+# Font configuration (changes require restart)
+font:
+  # Point size
+  size: 14
 
-            # The `style` can be specified to pick a specific face.
-            #style: Regular
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux) monospace
+    #   - (Windows) Consolas
+    family: Inconsolata
 
-            # Bold font face
-            #bold:
-            # Font family
-            #
-            # If the bold family is not specified, it will fall back to the
-            # value specified for the normal font.
-            #family: monospace
+      # The `style` can be specified to pick a specific face.
+      #style: Regular
 
-            # The `style` can be specified to pick a specific face.
-            #style: Bold
+      # Bold font face
+      #bold:
+      # Font family
+      #
+      # If the bold family is not specified, it will fall back to the
+      # value specified for the normal font.
+      #family: monospace
 
-            # Italic font face
-            #italic:
-            # Font family
-            #
-            # If the italic family is not specified, it will fall back to the
-            # value specified for the normal font.
-            #family: monospace
+      # The `style` can be specified to pick a specific face.
+      #style: Bold
 
-            # The `style` can be specified to pick a specific face.
-            #style: Italic
+      # Italic font face
+      #italic:
+      # Font family
+      #
+      # If the italic family is not specified, it will fall back to the
+      # value specified for the normal font.
+      #family: monospace
 
-            # Point size
-          size: 10
+      # The `style` can be specified to pick a specific face.
+      #style: Italic
 
-            # Offset is the extra space around each character. `offset.y` can be thought of
-            # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-          offset:
-            x: 0
-          y: 0
+      # Offset is the extra space around each character. `offset.y` can be thought of
+      # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+    offset:
+      x: 0
+      y: 0
 
-            # Glyph offset determines the locations of the glyphs within their cells with
-            # the default being at the bottom. Increasing `x` moves the glyph to the right,
-            # increasing `y` moves the glyph upwards.
-          glyph_offset:
-            x: 0
-          y: 0
+      # Glyph offset determines the locations of the glyphs within their cells with
+      # the default being at the bottom. Increasing `x` moves the glyph to the right,
+      # increasing `y` moves the glyph upwards.
+    glyph_offset:
+      x: 0
+      y: 0
 
-            # Thin stroke font rendering (macOS only)
-            #
-            # Thin strokes are suitable for retina displays, but for non-retina screens
-            # it is recommended to set `use_thin_strokes` to `false`
+      # Thin stroke font rendering (macOS only)
+      #
+      # Thin strokes are suitable for retina displays, but for non-retina screens
+      # it is recommended to set `use_thin_strokes` to `false`
   #
   # macOS >= 10.14.x:
   #
