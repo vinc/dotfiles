@@ -72,3 +72,5 @@ nnoremap L T
 " keyboard, causing entering it by mistake and having to type 'visual' to
 " leave it.
 nnoremap Q <Nop>
+
+set mouse=a
