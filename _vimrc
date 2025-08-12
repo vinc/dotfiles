@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vundlevim/vundle.vim'
 Plugin 'fidian/hexmode'
 Plugin 'dense-analysis/ale'
+Plugin 'bakpakin/janet.vim'
 
 call vundle#end()
 filetype plugin indent on
