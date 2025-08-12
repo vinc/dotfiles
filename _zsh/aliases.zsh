@@ -28,3 +28,10 @@ alias vim="vim -p"
 alias dokku="bash $HOME/.dokku/contrib/dokku_client.sh"
 
 hash colordiff 2>/dev/null && alias diff="colordiff"
+
+# MOROS
+alias edit="vim -p"
+alias list="ls -lh"
+alias drop="rm"
+alias move="mv"
+alias copy="cp"
