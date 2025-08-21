@@ -18,3 +18,5 @@ export PANEL_WM_NAME=bspwm_panel
 
 # Rust
 source $HOME/.cargo/env
+
+eval $(keychain --eval --quiet)
